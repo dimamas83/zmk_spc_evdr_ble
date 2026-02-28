@@ -47,23 +47,18 @@
         >;
     };
 
-    layout: layout {
+   layout: layout {
         compatible = "zmk,physical-layout";
         display-name = "Keypad Layout";
         transform = <&default_transform>;
         kscan = <&kscan0>;
         
-        // --- ИСПРАВЛЕННЫЙ БЛОК ---
-        // Координаты: <x y width height> в условных единицах (обычно 100 = 1U)
-        keys = <&key_physical_attrs 50 50 100 100> // RC(3,2) (Кнопка энкодера?)
-             
-             , <&key_physical_attrs 0 150 100 100> , <&key_physical_attrs 100 150 100 100> , <&key_physical_attrs 200 150 100 100> , <&key_physical_attrs 300 150 100 100> , <&key_physical_attrs 400 150 100 100> , <&key_physical_attrs 500 150 100 100> , <&key_physical_attrs 600 150 100 100> , <&key_physical_attrs 700 150 100 100> , <&key_physical_attrs 800 150 100 100> , <&key_physical_attrs 900 150 100 100> // Ряд 0
-             
-             , <&key_physical_attrs 0 250 100 100> , <&key_physical_attrs 100 250 100 100> , <&key_physical_attrs 200 250 100 100> , <&key_physical_attrs 300 250 100 100> , <&key_physical_attrs 400 250 100 100> , <&key_physical_attrs 500 250 100 100> , <&key_physical_attrs 600 250 100 100> , <&key_physical_attrs 700 250 100 100> , <&key_physical_attrs 800 250 100 100> , <&key_physical_attrs 900 250 100 100> // Ряд 1
-             
-             , <&key_physical_attrs 0 350 100 100> , <&key_physical_attrs 100 350 100 100> , <&key_physical_attrs 200 350 100 100> , <&key_physical_attrs 300 350 100 100> , <&key_physical_attrs 400 350 100 100> , <&key_physical_attrs 500 350 100 100> , <&key_physical_attrs 600 350 100 100> , <&key_physical_attrs 700 350 100 100> , <&key_physical_attrs 800 350 100 100> , <&key_physical_attrs 900 350 100 100> // Ряд 2
-             
-             , <&key_physical_attrs 0 450 100 100> , <&key_physical_attrs 100 450 100 100> , <&key_physical_attrs 300 450 100 100> , <&key_physical_attrs 400 450 100 100> , <&key_physical_attrs 500 450 100 100> , <&key_physical_attrs 600 450 100 100> , <&key_physical_attrs 800 450 100 100> , <&key_physical_attrs 900 450 100 100> // Ряд 3 (с пропусками)
+        // --- СТРОГИЙ ФОРМАТ ---
+        keys = <&key_physical_attrs 50 50 100 100>
+             , <&key_physical_attrs 0 150 100 100> , <&key_physical_attrs 100 150 100 100> , <&key_physical_attrs 200 150 100 100> , <&key_physical_attrs 300 150 100 100> , <&key_physical_attrs 400 150 100 100> , <&key_physical_attrs 500 150 100 100> , <&key_physical_attrs 600 150 100 100> , <&key_physical_attrs 700 150 100 100> , <&key_physical_attrs 800 150 100 100> , <&key_physical_attrs 900 150 100 100>
+             , <&key_physical_attrs 0 250 100 100> , <&key_physical_attrs 100 250 100 100> , <&key_physical_attrs 200 250 100 100> , <&key_physical_attrs 300 250 100 100> , <&key_physical_attrs 400 250 100 100> , <&key_physical_attrs 500 250 100 100> , <&key_physical_attrs 600 250 100 100> , <&key_physical_attrs 700 250 100 100> , <&key_physical_attrs 800 250 100 100> , <&key_physical_attrs 900 250 100 100>
+             , <&key_physical_attrs 0 350 100 100> , <&key_physical_attrs 100 350 100 100> , <&key_physical_attrs 200 350 100 100> , <&key_physical_attrs 300 350 100 100> , <&key_physical_attrs 400 350 100 100> , <&key_physical_attrs 500 350 100 100> , <&key_physical_attrs 600 350 100 100> , <&key_physical_attrs 700 350 100 100> , <&key_physical_attrs 800 350 100 100> , <&key_physical_attrs 900 350 100 100>
+             , <&key_physical_attrs 0 450 100 100> , <&key_physical_attrs 100 450 100 100> , <&key_physical_attrs 300 450 100 100> , <&key_physical_attrs 400 450 100 100> , <&key_physical_attrs 500 450 100 100> , <&key_physical_attrs 600 450 100 100> , <&key_physical_attrs 800 450 100 100> , <&key_physical_attrs 900 450 100 100>
              ;
     };
 

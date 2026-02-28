@@ -50,15 +50,56 @@
         transform = <&transform>;
         kscan = <&kscan0>;
 
-        keys //                      w   h   x   y rot  rx   ry
-            = <&key_physical_attrs 100 100   0   0   0   0   0>
-            , <&key_physical_attrs 100 100 100   0   0   0   0>
-            , <&key_physical_attrs 100 100 200   0   0   0   0>
-            , <&key_physical_attrs 100 100 300   0   0   0   0>
-            , <&key_physical_attrs 100 100   0 100   0   0   0>
-            , <&key_physical_attrs 100 100 100 100   0   0   0>
-            , <&key_physical_attrs 100 100 200 100   0   0   0>
-            , <&key_physical_attrs 100 100 300 100   0   0   0>
+        keys //                      w   h   x   y rot  rx  ry
+            = <&key_physical_attrs 100 100   0   0   0   0   0> // Stray key (0)
+            , <&key_physical_attrs 100 100   0 100   0   0   0> // ~
+            , <&key_physical_attrs 100 100 100 100   0   0   0> // 1
+            , <&key_physical_attrs 100 100 200 100   0   0   0> // 2
+            , <&key_physical_attrs 100 100 300 100   0   0   0> // 3
+            , <&key_physical_attrs 100 100 400 100   0   0   0> // 4
+            , <&key_physical_attrs 100 100 500 100   0   0   0> // 5
+            , <&key_physical_attrs 100 100 600 100   0   0   0> // 6
+            , <&key_physical_attrs 100 100 700 100   0   0   0> // 7
+            , <&key_physical_attrs 100 100 800 100   0   0   0> // 8
+            , <&key_physical_attrs 100 100 900 100   0   0   0> // 9
+            , <&key_physical_attrs 100 100 1000 100   0   0   0> // 0
+            
+            , <&key_physical_attrs 100 100   0 200   0   0   0> // Q
+            , <&key_physical_attrs 100 100 100 200   0   0   0> // W
+            , <&key_physical_attrs 100 100 200 200   0   0   0> // E
+            , <&key_physical_attrs 100 100 300 200   0   0   0> // R
+            , <&key_physical_attrs 100 100 400 200   0   0   0> // T
+            , <&key_physical_attrs 100 100 500 200   0   0   0> // Y
+            , <&key_physical_attrs 100 100 600 200   0   0   0> // U
+            , <&key_physical_attrs 100 100 700 200   0   0   0> // I
+            , <&key_physical_attrs 100 100 800 200   0   0   0> // O
+            , <&key_physical_attrs 100 100 900 200   0   0   0> // P
+        
+            , <&key_physical_attrs 100 100   0 300   0   0   0> // A
+            , <&key_physical_attrs 100 100 100 300   0   0   0> // S
+            , <&key_physical_attrs 100 100 200 300   0   0   0> // D
+            , <&key_physical_attrs 100 100 300 300   0   0   0> // F
+            , <&key_physical_attrs 100 100 400 300   0   0   0> // G
+            , <&key_physical_attrs 100 100 500 300   0   0   0> // H
+            , <&key_physical_attrs 100 100 600 300   0   0   0> // J
+            , <&key_physical_attrs 100 100 700 300   0   0   0> // K
+            , <&key_physical_attrs 100 100 800 300   0   0   0> // L
+            , <&key_physical_attrs 100 100 900 300   0   0   0> // :
+        
+            , <&key_physical_attrs 100 100   0 400   0   0   0> // `
+            , <&key_physical_attrs 100 100 100 400   0   0   0> // '
+        
+            , <&key_physical_attrs 100 100 600 500   0   0   0> // {
+            , <&key_physical_attrs 100 100 700 500   0   0   0> // )
+            , <&key_physical_attrs 100 100 800 500   0   0   0> // 4
+        
+            // Нижний ряд (с учетом y-0.5 => 600 - 50 = 550)
+            , <&key_physical_attrs 100 100 225 550   0   0   0>
+            , <&key_physical_attrs 100 100 325 550   0   0   0>
+            , <&key_physical_attrs 175 100 425 550   0   0   0>
+            , <&key_physical_attrs 100 100 600 550   0   0   0>
+            , <&key_physical_attrs 175 100 700 550   0   0   0>
+            , <&key_physical_attrs 100 100 875 550   0   0   0>
             ;
     
     };

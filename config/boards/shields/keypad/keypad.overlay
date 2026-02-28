@@ -53,7 +53,7 @@
         transform = <&default_transform>;
         kscan = <&kscan0>;
         
-        // --- СТРОГИЙ ФОРМАТ ---
+        // --- МАКСИМАЛЬНО СТРОГИЙ СИНТАКСИС ---
         keys = <&key_physical_attrs 50 50 100 100>
              , <&key_physical_attrs 0 150 100 100> , <&key_physical_attrs 100 150 100 100> , <&key_physical_attrs 200 150 100 100> , <&key_physical_attrs 300 150 100 100> , <&key_physical_attrs 400 150 100 100> , <&key_physical_attrs 500 150 100 100> , <&key_physical_attrs 600 150 100 100> , <&key_physical_attrs 700 150 100 100> , <&key_physical_attrs 800 150 100 100> , <&key_physical_attrs 900 150 100 100>
              , <&key_physical_attrs 0 250 100 100> , <&key_physical_attrs 100 250 100 100> , <&key_physical_attrs 200 250 100 100> , <&key_physical_attrs 300 250 100 100> , <&key_physical_attrs 400 250 100 100> , <&key_physical_attrs 500 250 100 100> , <&key_physical_attrs 600 250 100 100> , <&key_physical_attrs 700 250 100 100> , <&key_physical_attrs 800 250 100 100> , <&key_physical_attrs 900 250 100 100>

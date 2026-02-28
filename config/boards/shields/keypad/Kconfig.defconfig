@@ -1,6 +1,0 @@
-if SHIELD_SPC_EVDR
-
-config ZMK_KEYBOARD_NAME
-    default "spc_evdr"
-
-endif

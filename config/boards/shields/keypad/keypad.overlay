@@ -47,63 +47,53 @@
         >;
     };
 
-    layout: layout {
+   layout: layout {
         compatible = "zmk,physical-layout";
         display-name = "Default layout";
         transform = <&default_transform>;
         kscan = <&kscan0>;
-       
-
-        keys
-            = <&key_physical_attrs 100 100   0   0   0   0   0> // 1: Stray key RC(3,2)
-
-            // Ряд 1 (RC 0,0 - 0,9) - 10 клавиш
-            , <&key_physical_attrs 100 100   0 100   0   0   0> // 2
-            , <&key_physical_attrs 100 100 100 100   0   0   0> // 3
-            , <&key_physical_attrs 100 100 200 100   0   0   0> // 4
-            , <&key_physical_attrs 100 100 300 100   0   0   0> // 5
-            , <&key_physical_attrs 100 100 400 100   0   0   0> // 6
-            , <&key_physical_attrs 100 100 500 100   0   0   0> // 7
-            , <&key_physical_attrs 100 100 600 100   0   0   0> // 8
-            , <&key_physical_attrs 100 100 700 100   0   0   0> // 9
-            , <&key_physical_attrs 100 100 800 100   0   0   0> // 10
-            , <&key_physical_attrs 100 100 900 100   0   0   0> // 11
-
-            // Ряд 2 (RC 1,0 - 1,9) - 10 клавиш
-            , <&key_physical_attrs 100 100   0 200   0   0   0> // 12
-            , <&key_physical_attrs 100 100 100 200   0   0   0> // 13
-            , <&key_physical_attrs 100 100 200 200   0   0   0> // 14
-            , <&key_physical_attrs 100 100 300 200   0   0   0> // 15
-            , <&key_physical_attrs 100 100 400 200   0   0   0> // 16
-            , <&key_physical_attrs 100 100 500 200   0   0   0> // 17
-            , <&key_physical_attrs 100 100 600 200   0   0   0> // 18
-            , <&key_physical_attrs 100 100 700 200   0   0   0> // 19
-            , <&key_physical_attrs 100 100 800 200   0   0   0> // 20
-            , <&key_physical_attrs 100 100 900 200   0   0   0> // 21
-
-            // Ряд 3 (RC 2,0 - 2,9) - 10 клавиш
-            , <&key_physical_attrs 100 100   0 300   0   0   0> // 22
-            , <&key_physical_attrs 100 100 100 300   0   0   0> // 23
-            , <&key_physical_attrs 100 100 200 300   0   0   0> // 24
-            , <&key_physical_attrs 100 100 300 300   0   0   0> // 25
-            , <&key_physical_attrs 100 100 400 300   0   0   0> // 26
-            , <&key_physical_attrs 100 100 500 300   0   0   0> // 27
-            , <&key_physical_attrs 100 100 600 300   0   0   0> // 28
-            , <&key_physical_attrs 100 100 700 300   0   0   0> // 29
-            , <&key_physical_attrs 100 100 800 300   0   0   0> // 30
-            , <&key_physical_attrs 100 100 900 300   0   0   0> // 31
-
-            // Ряд 4 (Нижний, 8 клавиш с пропусками)
-            , <&key_physical_attrs 100 100   0 400   0   0   0> // 32: RC(3,0)
-            , <&key_physical_attrs 100 100 100 400   0   0   0> // 33: RC(3,1)
-            , <&key_physical_attrs 100 100 300 400   0   0   0> // 34: RC(3,3)
-            , <&key_physical_attrs 100 100 400 400   0   0   0> // 35: RC(3,4)
-            , <&key_physical_attrs 100 100 500 400   0   0   0> // 36: RC(3,5)
-            , <&key_physical_attrs 100 100 600 400   0   0   0> // 37: RC(3,6)
-            , <&key_physical_attrs 100 100 800 400   0   0   0> // 38: RC(3,8)
-            , <&key_physical_attrs 100 100 900 400   0   0   0> // 39: RC(3,9)
-            ;
-    
+        // Снова пробуем БЕЗ zmk,keymap-nodes, но с исправленной структурой
+        keys 
+            = <&key_physical_attrs 100 100   0   0   0   0   0> // Stray key RC(3,2)                
+            , <&key_physical_attrs 100 100   0 100   0   0   0> // RC(0,0)
+            , <&key_physical_attrs 100 100 100 100   0   0   0> // RC(0,1)
+            , <&key_physical_attrs 100 100 200 100   0   0   0> // RC(0,2)
+            , <&key_physical_attrs 100 100 300 100   0   0   0> // RC(0,3)
+            , <&key_physical_attrs 100 100 400 100   0   0   0> // RC(0,4)
+            , <&key_physical_attrs 100 100 500 100   0   0   0> // RC(0,5)
+            , <&key_physical_attrs 100 100 600 100   0   0   0> // RC(0,6)
+            , <&key_physical_attrs 100 100 700 100   0   0   0> // RC(0,7)
+            , <&key_physical_attrs 100 100 800 100   0   0   0> // RC(0,8)
+            , <&key_physical_attrs 100 100 900 100   0   0   0> // RC(0,9)
+            , <&key_physical_attrs 100 100   0 200   0   0   0> // RC(1,0)
+            , <&key_physical_attrs 100 100 100 200   0   0   0> // RC(1,1)
+            , <&key_physical_attrs 100 100 200 200   0   0   0> // RC(1,2)
+            , <&key_physical_attrs 100 100 300 200   0   0   0> // RC(1,3)
+            , <&key_physical_attrs 100 100 400 200   0   0   0> // RC(1,4)
+            , <&key_physical_attrs 100 100 500 200   0   0   0> // RC(1,5)
+            , <&key_physical_attrs 100 100 600 200   0   0   0> // RC(1,6)
+            , <&key_physical_attrs 100 100 700 200   0   0   0> // RC(1,7)
+            , <&key_physical_attrs 100 100 800 200   0   0   0> // RC(1,8)
+            , <&key_physical_attrs 100 100 900 200   0   0   0> // RC(1,9)
+            , <&key_physical_attrs 100 100   0 300   0   0   0> // RC(2,0)
+            , <&key_physical_attrs 100 100 100 300   0   0   0> // RC(2,1)
+            , <&key_physical_attrs 100 100 200 300   0   0   0> // RC(2,2)
+            , <&key_physical_attrs 100 100 300 300   0   0   0> // RC(2,3)
+            , <&key_physical_attrs 100 100 400 300   0   0   0> // RC(2,4)
+            , <&key_physical_attrs 100 100 500 300   0   0   0> // RC(2,5)
+            , <&key_physical_attrs 100 100 600 300   0   0   0> // RC(2,6)
+            , <&key_physical_attrs 100 100 700 300   0   0   0> // RC(2,7)
+            , <&key_physical_attrs 100 100 800 300   0   0   0> // RC(2,8)
+            , <&key_physical_attrs 100 100 900 300   0   0   0> // RC(2,9)
+            , <&key_physical_attrs 100 100   0 400   0   0   0> // RC(3,0)
+            , <&key_physical_attrs 100 100 100 400   0   0   0> // RC(3,1)
+            , <&key_physical_attrs 100 100 300 400   0   0   0> // RC(3,3)
+            , <&key_physical_attrs 100 100 400 400   0   0   0> // RC(3,4)
+            , <&key_physical_attrs 100 100 500 400   0   0   0> // RC(3,5)
+            , <&key_physical_attrs 100 100 600 400   0   0   0> // RC(3,6)
+            , <&key_physical_attrs 100 100 800 400   0   0   0> // RC(3,8)
+            , <&key_physical_attrs 100 100 900 400   0   0   0> // RC(3,9)
+            ;                
     };
 
     center_encoder: encoder_center {

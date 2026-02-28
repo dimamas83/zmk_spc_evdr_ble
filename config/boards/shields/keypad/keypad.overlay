@@ -1,10 +1,13 @@
 #include <physical_layouts.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/i2c/i2c.h>
 
 / {
     chosen {
         zmk,physical-layout = &layout;
+        zmk,kscan = &kscan0;
+        zmk,matrix_transform = &default_transform;
     };
 
     kscan0: kscan {
@@ -31,7 +34,7 @@
             ;
     };
 
-    transform: matrix_transform {
+    default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         rows = <4>;
         columns = <10>;
@@ -47,7 +50,7 @@
     layout: layout {
         compatible = "zmk,physical-layout";
         display-name = "Default layout";
-        transform = <&transform>;
+        transform = <&default_transform>;
         kscan = <&kscan0>;
 
         keys //                      w   h   x   y rot  rx  ry

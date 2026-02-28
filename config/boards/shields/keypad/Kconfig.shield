@@ -1,3 +1,3 @@
-config SHIELD_KEYPAD
-    def_bool $(shields_list_contains,keypad)
+config SHIELD_SPC_EVDR
+    def_bool $(shields_list_contains,spc_evdr)
     

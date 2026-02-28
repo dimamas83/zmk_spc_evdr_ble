@@ -20,5 +20,4 @@
 ---
 include:
   - board: xiao_ble
-    shield: spc_evdr
     snippet: studio-rpc-usb-uart

@@ -20,4 +20,5 @@
 ---
 include:
   - board: xiao_ble
+    shield: keypad
     snippet: studio-rpc-usb-uart

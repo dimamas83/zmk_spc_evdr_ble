@@ -1,6 +1,6 @@
-if SHIELD_KEYPAD
+if SHIELD_SPC_EVDR
 
 config ZMK_KEYBOARD_NAME
-    default "keypad"
+    default "spc_evdr"
 
 endif

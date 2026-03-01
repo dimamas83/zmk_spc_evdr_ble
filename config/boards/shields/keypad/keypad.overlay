@@ -3,6 +3,14 @@
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/i2c/i2c.h>
 
+/* Магия: объявляем свойство studio_selectable, чтобы компилятор его узнал */
+/ {
+    __physical_layout_studio_selectable {
+        compatible = "zmk,physical-layout";
+        studio_selectable;
+    };
+};
+
 / {
     chosen {
         zmk,physical-layout = &layout;

@@ -3,11 +3,15 @@
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/i2c/i2c.h>
 
-/* Магия: объявляем свойство studio_selectable, чтобы компилятор его узнал */
+/* Исправленный блок магии */
 / {
     __physical_layout_studio_selectable {
         compatible = "zmk,physical-layout";
+        display-name = "Studio Fix";
         studio_selectable;
+        /* Указываем ссылки на твои реальные узлы, чтобы пройти проверку */
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
     };
 };
 

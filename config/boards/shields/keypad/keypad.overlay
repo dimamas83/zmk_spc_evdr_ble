@@ -4,12 +4,23 @@
 #include <dt-bindings/i2c/i2c.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
+/* Магия для обхода ошибки компилятора */
+/ {
+    __zmk_studio_fix {
+        compatible = "zmk,physical-layout";
+        studio_selectable;
+        display-name = "Fix";
+        /* Обязательные ссылки, чтобы пройти валидацию */
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+    };
+};
+
 / {
     chosen {
         zmk,physical-layout = &layout;
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
-        zmk,physical-layout = &layout;
     };
 
     kscan0: kscan {

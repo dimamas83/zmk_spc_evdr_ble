@@ -8,6 +8,7 @@
         zmk,physical-layout = &layout;
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
+        zmk,studio-primary-physical-layout = &layout;
     };
 
     kscan0: kscan {

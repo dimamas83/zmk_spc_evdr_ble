@@ -4,7 +4,7 @@
 #include <dt-bindings/i2c/i2c.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
-/* Магия для обхода ошибки компилятора */
+/* Магия для обхода ошибки компилятора 
 / {
     __zmk_studio_fix {
         compatible = "zmk,physical-layout";
@@ -15,6 +15,7 @@
         kscan = <&kscan0>;
     };
 };
+*/
 
 / {
     chosen {
@@ -65,7 +66,7 @@
         display-name = "Keypad Layout";
         transform = <&default_transform>;
         kscan = <&kscan0>;
-        studio_selectable;
+        //studio_selectable;
         
         keys
             //                     w   h   x   y   rot rx  ry
